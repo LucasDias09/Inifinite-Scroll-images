@@ -8,7 +8,9 @@ let photosArray = [];
 let initialLoad = true;
 
 // Unsplash API
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${config.apiKey}&count=${config.count}`;
+let count = config.count;
+const apiKey = config.apiKey;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 // check if all images were loaded
 function imageLoadded() {
